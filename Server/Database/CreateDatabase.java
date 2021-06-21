@@ -25,7 +25,7 @@ public class CreateDatabase
 
     public static void createTestUsers(int id, String name, String password, String friends, int adminLevel)
     {
-        String url = "jdbc:sqlite:C:/Users/Краб/IdeaProjects/Chat/src/Server/Database/Chat.db";
+        String url = "jdbc:sqlite:C:/Users/Chat.db";
 
         String sql = "INSERT INTO users(id,name,password,friends,adminLevel) VALUES(?,?,?,?,?)";
 
@@ -47,7 +47,7 @@ public class CreateDatabase
 
     public static void createNewTable()
     {
-        String url = "jdbc:sqlite:C:/Users/Краб/IdeaProjects/Chat/src/Server/Database/Chat.db";
+        String url = "jdbc:sqlite:C:/Users/Chat.db";
 
         String sql = "CREATE TABLE IF NOT EXISTS users (\n"
                 + "	id integer PRIMARY KEY,\n"
